@@ -1,53 +1,100 @@
-.navbar {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 20px 60px;
-    text-decoration: none; /* Removes underline */
-    color: black;
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.navbar ul{
-   list-style: none;
-   margin: 0 auto;
-   padding: 0;
-   display: flex;
-   gap:  30px;
-   align-items: center;
-
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#243E63;
 }
 
-.logo {
-   display: flex;
-   align-items: center;
-   gap: 10px;
+/* NAVBAR */
+
+.navbar{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:30px 0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.nav-links {
-   display: flex;
-   list-style: none;
-   gap: 35px;
-   align-items: center;
-   margin: 0;
-   padding: 0;
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
-.signup {
-   background: #5b3df5;
-   color: white;
-   padding: 12px 24px;
-   border-radius: 999px;
+.logo img{
+    width:42px;
 }
 
-.logo img {
-    width: 40px;
+.logo span{
+    font-size:28px;
+    font-weight:700;
 }
 
-.logo span {
-    font-size: 24px;
-    font-weight: bold;
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:32px;
+    list-style:none;
 }
 
-.purple {
-    color: rgb(100, 21, 255);
+.nav-links a{
+    text-decoration:none;
+    color:#243E63;
+    font-weight:600;
+}
+
+.signup-btn{
+    background:#6415ff;
+    color:white;
+    padding:12px 26px;
+    border-radius:999px;
+}
+
+/* HERO */
+
+.hero{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:64px;
+    line-height:1.1;
+    margin-bottom:24px;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:1.7;
+    max-width:520px;
+}
+
+.purple{
+    color:#6415ff;
+}
+
+.hero-image{
+    flex:1;
+    width:100%;
+    max-width:600px;
+}
 }
