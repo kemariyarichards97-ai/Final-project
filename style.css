@@ -1,8 +1,20 @@
 .navbar {
    display: flex;
    justify-content: space-between;
-   align-items: center vertical;
+   align-items: center;
    padding: 20px 60px;
+    text-decoration: none; /* Removes underline */
+    color: black;
+}
+
+.navbar ul{
+   list-style: none;
+   margin: 0 auto;
+   padding: 0;
+   display: flex;
+   gap:  30px;
+   align-items: center;
+
 }
 
 .logo {
@@ -14,5 +26,28 @@
 .nav-links {
    display: flex;
    list-style: none;
+   gap: 35px;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+}
 
+.signup {
+   background: #5b3df5;
+   color: white;
+   padding: 12px 24px;
+   border-radius: 999px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.purple {
+    color: rgb(100, 21, 255);
 }
