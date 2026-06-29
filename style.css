@@ -24,7 +24,7 @@ body {
     align-items: center;
 }
 
-/* Logo */
+/* ================= LOGO ================= */
 
 .logo {
     display: flex;
@@ -41,7 +41,7 @@ body {
     font-weight: 700;
 }
 
-/* Navigation */
+/* ================= NAVIGATION ================= */
 
 .nav-links {
     display: flex;
@@ -56,16 +56,6 @@ body {
     font-weight: 600;
     transition: color 0.3s ease;
 }
-
-/* Hover ONLY for normal links */
-
-.nav-links a:not(.signup-btn):hover {
-    color: #6415ff;
-    text-decoration: underline;
-    text-underline-offset: 6px;
-}
-
-/* Sign Up Button */
 
 .signup-btn {
     background: #6415ff;
@@ -95,9 +85,8 @@ body {
 }
 
 .hero-text {
-     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex: 1;
+    max-width: 520px;
 }
 
 .hero-text h1 {
@@ -116,6 +105,8 @@ body {
     color: #6415ff;
 }
 
+/* ================= HERO IMAGE ================= */
+
 .hero-image {
     flex: 1;
     width: 100%;
@@ -123,11 +114,37 @@ body {
     height: auto;
 }
 
+/* ================= EMAIL ================= */
+
+.header__email {
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header__email--input {
+    width: 100%;
+    height: 100%;
+    border-radius: 500px;
+    padding: 20px 192px 20px 32px;
+}
+
+.header__email--btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    bottom: 8px;
+    width: 160px;
+}
+
+/* ================= EMAIL FORM ================= */
 .email-form {
     position: relative;
-    width: 100%;
-    max-width: 460px;
-    margin-top: 32px auto 0;
+    width: 460px;
+    margin: 32px auto 0 auto;
 }
 
 .email-form input {
@@ -138,6 +155,7 @@ body {
     outline: none;
     font-size: 16px;
     transition: 0.3s;
+    box-sizing: border-box;
 }
 
 .email-form input:focus {
@@ -151,7 +169,7 @@ body {
 .email-form button {
     position: absolute;
     top: 6px;
-    right: px;
+    right: 6px;
     bottom: 6px;
     padding: 0 32px;
     border: none;
