@@ -1,100 +1,169 @@
-/* RESET */
+/* ================= RESET ================= */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    color:#243E63;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #243E63;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 
-.navbar{
-    width:90%;
-    max-width:1200px;
-    margin:0 auto;
-    padding:30px 0;
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 22px;
 }
 
-.logo img{
-    width:42px;
+.logo img {
+    width: 49px;
 }
 
-.logo span{
-    font-size:28px;
-    font-weight:700;
+.logo span {
+    font-size: 28px;
+    font-weight: 700;
 }
 
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:32px;
-    list-style:none;
+/* Navigation */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
 }
 
-.nav-links a{
-    text-decoration:none;
-    color:#243E63;
-    font-weight:600;
+.nav-links a {
+    text-decoration: none;
+    color: #243E63;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.signup-btn{
-    background:#6415ff;
-    color:white;
-    padding:12px 26px;
-    border-radius:999px;
+/* Hover ONLY for normal links */
+
+.nav-links a:not(.signup-btn):hover {
+    color: #6415ff;
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
-/* HERO */
+/* Sign Up Button */
 
-.hero{
-    width:90%;
-    max-width:1200px;
-    margin:60px auto;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:60px;
+.signup-btn {
+    background: #6415ff;
+    color: white;
+    padding: 12px 26px;
+    border-radius: 999px;
+    transition: background-color 0.3s ease;
 }
 
-.hero-text{
-    flex:1;
+.signup-btn:hover {
+    background: #5011d1;
+    color: white;
+    text-decoration: none;
 }
 
-.hero-text h1{
-    font-size:64px;
-    line-height:1.1;
-    margin-bottom:24px;
+/* ================= HERO ================= */
+
+.hero {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
 }
 
-.hero-text p{
-    font-size:20px;
-    line-height:1.7;
-    max-width:520px;
+.hero-text {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.purple{
-    color:#6415ff;
+.hero-text h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 24px;
 }
 
-.hero-image{
-    flex:1;
-    width:100%;
-    max-width:600px;
+.hero-text p {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 520px;
 }
+
+.purple {
+    color: #6415ff;
+}
+
+.hero-image {
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.email-form {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    margin-top: 32px auto 0;
+}
+
+.email-form input {
+    width: 100%;
+    padding: 18px 170px 18px 24px;
+    border: 2px solid #e5e7eb;
+    border-radius: 999px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.email-form input:focus {
+    border-color: #6415ff;
+}
+
+.email-form input::placeholder {
+    color: #9ca3af;
+}
+
+.email-form button {
+    position: absolute;
+    top: 6px;
+    right: px;
+    bottom: 6px;
+    padding: 0 32px;
+    border: none;
+    border-radius: 999px;
+    background: #6415ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.email-form button:hover {
+    background: #5011cc;
 }
