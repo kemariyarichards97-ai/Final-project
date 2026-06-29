@@ -11,6 +11,22 @@ body {
     color: #243E63;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+}
+
 /* ================= NAVBAR ================= */
 
 .navbar {
@@ -55,6 +71,10 @@ body {
     color: #243E63;
     font-weight: 600;
     transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #6415ff;
 }
 
 .signup-btn {
@@ -107,11 +127,10 @@ body {
 
 /* ================= HERO IMAGE ================= */
 
-.hero-image {
-    flex: 1;
+.hero-image img {
     width: 100%;
-    max-width: 600px;
     height: auto;
+    display: block;
 }
 
 /* ================= EMAIL ================= */
@@ -184,4 +203,20 @@ body {
 
 .email-form button:hover {
     background: #5011cc;
+}
+.customer-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    padding-bottom: 40px;
+}
+
+.customer {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    opacity: 0.6;
 }
