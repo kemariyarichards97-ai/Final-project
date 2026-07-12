@@ -255,16 +255,23 @@ body {
     object-fit: contain;
 }
 
------------pricing
+.section-tag {
+    text-align: center;
+}
+
+/* PRICING */
 .pricing-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 30px;
     max-width: 1200px;
+    flex: center;
+    left: center;
     margin: 0 auto;
 }
- .princing-card {
+    
+
+ .pricing-card {
     flex: 1;
     max-width: 350px;
     background: white;
