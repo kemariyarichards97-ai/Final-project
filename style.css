@@ -261,6 +261,12 @@ h1 {
     margin-bottom: 40px;
 }
 
+.pricing-description {
+    position: relative;
+    top: -20px;
+    margin-bottom: 40px;
+}
+
 /* PRICING */
 
 .pricing-container {
@@ -301,7 +307,7 @@ h1 {
 }
 
 .pricing-section {
-    background-color: #f3f4f6; 
+    background-color: rgba(255, 255, 255, 0.37); 
     padding: 80px 20px;
 }
 
@@ -310,3 +316,47 @@ h1 {
     line-height: 4.8;
 }
 
+.individual {
+    border-top: 8px solid #5011cc;
+}
+
+.team {
+    border-top: 9px solid #5011cc;
+   color: white;
+}
+
+.pricing-btn {
+    padding: 14px 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.individual .pricing-btn {
+    background: #a5abb6;
+    color: white;
+}
+
+.team .pricing-btn {
+    background: white;
+    color: #585ceb;
+}
+.pricing-middle {
+    background-color: #5011cc;
+    color: white;
+
+    width: calc(100% + 60px);
+    margin: 0 -30px;
+    padding: 35px 30px;
+}
+
+.pricing-middle h4,
+.pricing-middle p {
+    color: white;
+}
+
+.pricing-middle h4,
+.pricing-middle p {
+    color: white;
+}
