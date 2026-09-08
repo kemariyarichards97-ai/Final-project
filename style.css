@@ -11,6 +11,7 @@ body {
     color: #243E63;
 }
 
+
 /* ================= NAVBAR ================= */
 
 .navbar {
@@ -28,13 +29,15 @@ body {
     background: white;
 }
 
+
 /* ================= LOGO ================= */
 
-.row{
+.row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -50,6 +53,7 @@ body {
     font-size: 28px;
     font-weight: 700;
 }
+
 
 /* ================= NAV LINKS ================= */
 
@@ -92,13 +96,13 @@ body {
     background: #5011cc;
 }
 
+
 /* ================= HERO ================= */
 
 .hero {
     width: 90%;
     max-width: 1200px;
     margin: 60px auto;
-    flex-direction: coloumn;
 
     display: flex;
     justify-content: space-between;
@@ -127,12 +131,14 @@ body {
     color: #6415ff;
 }
 
+
 /* ================= HERO IMAGE ================= */
 
 .hero-image img {
     width: 100%;
     max-width: 600px;
 }
+
 
 /* ================= EMAIL FORM ================= */
 
@@ -145,6 +151,7 @@ body {
 .email-form input {
     width: 100%;
     padding: 18px 140px 18px 24px;
+
     border: 2px solid #e5e7eb;
     border-radius: 999px;
     font-size: 16px;
@@ -160,9 +167,11 @@ body {
     right: 6px;
     top: 6px;
     bottom: 6px;
+
     padding: 0 24px;
     border: none;
     border-radius: 999px;
+
     background: #6415ff;
     color: white;
     font-weight: 700;
@@ -173,6 +182,7 @@ body {
     background: #5011cc;
 }
 
+
 /* ================= CUSTOMER LOGO ================= */
 
 .customer {
@@ -182,60 +192,49 @@ body {
     opacity: 0.6;
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
 
-  .menu-btn {
-    display: block;
-  }
-}
- .figure{
+/* ================= FIGURE ================= */
+
+.figure {
     padding: 50px 20px;
- }
+}
 
- .container {
+.container {
     width: 90%;
     max-width: 1100px;
     margin: auto;
     text-align: center;
- }
+}
 
- .feature-grid {
+.feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 30px;
- }
+}
 
- .feature-box h3 {
+.feature-box h3 {
     font-size: 20px;
     margin-bottom: 8px;
- }
+}
 
- .feature-box p {
+.feature-box p {
     font-size: 15px;
     color: gray;
     line-height: 1.5;
- }
-
-
- 
- @media (max-width: 768px) {
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
+
+/* ================= QUALITY WORK ================= */
+
 .work {
-  width: 100%;
-  max-width: 1200px;
-  margin: 100px auto;
-  display: flex;
-  align-items: center;
-  gap: 60px;
-   flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
 }
 
 .work-text {
@@ -243,7 +242,7 @@ body {
 }
 
 .work-image {
-    width: 80%;
+    width: 50%;
 }
 
 .work-image img {
@@ -261,102 +260,323 @@ h1 {
     margin-bottom: 40px;
 }
 
-.pricing-description {
-    position: relative;
-    top: -20px;
-    margin-bottom: 40px;
+
+/* ================= PRICING ================= */
+
+.pricing {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 80px 20px;
+
+    text-align: center;
 }
 
-/* PRICING */
+.pricing-label {
+    color: #635bff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
 
-.pricing-container {
+.pricing h1 {
+    color: #374151;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.pricing h1 span {
+    color: #5b4de8;
+}
+
+.pricing-description {
+    max-width: 650px;
+    margin: 0 auto 50px;
+
+    color: #777;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* ================= PRICING CARDS ================= */
+
+.plans {
     display: flex;
     justify-content: center;
+    align-items: stretch;
+
     gap: 30px;
-    max-width: 1200px;
+
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-.pricing-card {
+.plan {
     flex: 1;
-    max-width: 350px;
-    width: 340px;
-    min-height: 620px;
+
+    max-width: 340px;
+    min-height: 500px;
 
     background: white;
-    padding: 40px 30px;
-    border-radius: 10px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+
+    text-align: center;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    overflow: hidden;
-    gap: 25px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-.pricing-card h3 {
-    margin-bottom: 20px;
+
+/* ================= CARD TOP ================= */
+
+.plan-top {
+    height: 8px;
+    background: #1d12f0;
+    flex-shrink: 0;
 }
 
-.pricing-card h2 {
-    font-size: 35px;
+
+/* ================= CARD TITLE ================= */
+
+.plan h2 {
+    color: #64748b;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.price {
+    color: #475569;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.month {
+    color: #071830;
+    font-size: 16px;
+    font-weight: bold;
     margin-bottom: 25px;
 }
 
-.pricing-section {
-    background-color: rgba(255, 255, 255, 0.37); 
-    padding: 80px 20px;
+
+/* ================= CARD FEATURES ================= */
+
+.plan .features {
+    background: #4f46e5;
+    color: white;
+
+    padding: 35px 20px;
+
+    min-height: 190px;
+
+    margin-top: auto;
 }
 
-.pricing-card p {
-    margin: 10px 0;
-    line-height: 4.8;
+.plan .features p {
+    margin-bottom: 15px;
+    font-size: 14px;
 }
 
-.individual {
-    border-top: 8px solid #5011cc;
-}
 
-.team {
-    border-top: 9px solid #5011cc;
-   color: white;
-}
+/* ================= CARD BUTTON ================= */
 
-.pricing-btn {
-    padding: 14px 40px;
+.plan button {
+    margin: 20px auto 30px;
+
+    padding: 10px 35px;
+
     border: none;
-    border-radius: 50px;
+    border-radius: 20px;
+
+    background: #0f28b7;
+    color: white;
+
     font-weight: bold;
     cursor: pointer;
 }
 
-.individual .pricing-btn {
-    background: #a5abb6;
-    color: white;
+.plan button:hover {
+    background: #6415ff;
 }
 
-.team .pricing-btn {
-    background: white;
-    color: #585ceb;
-}
-.pricing-middle {
-    background-color: #5011cc;
-    color: white;
 
-    width: calc(100% + 60px);
-    margin: 0 -30px;
-    padding: 35px 30px;
+/* ================= MIDDLE CARD ================= */
+
+/* Keeps ALL THREE cards level */
+
+.featured {
+    margin-top: 0;
 }
 
-.pricing-middle h4,
-.pricing-middle p {
-    color: white;
+.featured .plan-top {
+    background: #4f46e5;
 }
 
-.pricing-middle h4,
-.pricing-middle p {
+.featured .features {
+    background: #4f46e5;
+}
+
+
+/* ================= SECTION BETWEEN CARDS & FOOTER ================= */
+
+/* Put your picture + paragraph inside this section */
+
+.between-section {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 100px auto 0;
+
+    padding: 100px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+.between-section .between-image {
+    width: 50%;
+}
+
+.between-section .between-image img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+}
+
+.between-section .between-text {
+    width: 50%;
+}
+
+.between-section .between-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.between-section .between-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    width: 100%;
+
+    background: #4f46e5;
+
+    padding: 60px 20px;
+
+    margin-top: 0;
+}
+
+.footer-links {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column h3 {
     color: white;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: #d8c8ff;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 45px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work {
+        flex-direction: column;
+    }
+
+    .work-text,
+    .work-image {
+        width: 100%;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .between-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .between-section .between-image,
+    .between-section .between-text {
+        width: 100%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
