@@ -224,6 +224,14 @@ body {
     line-height: 1.5;
 }
 
+.about-section {
+    width: 50%;
+    min-height: 500px;
+    float: left;
+}
+
+
+
 
 /* ================= QUALITY WORK ================= */
 
@@ -258,6 +266,11 @@ body {
 
 h1 {
     margin-bottom: 40px;
+}
+
+.small-image {
+    width: 50%;
+    height: auto;
 }
 
 
