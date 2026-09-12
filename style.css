@@ -821,10 +821,273 @@ h1 {
     background: #4f46e5;
 }
 
+/* ==============================
+   TESTIMONIAL SECTION
+================================= */
 
-/* ================= SECTION BETWEEN CARDS & FOOTER ================= */
+.testimonials {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 
-/* Put your picture + paragraph inside this section */
+    padding: 80px 70px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 80px;
+
+    background: #ffffff;
+}
+
+
+/* ==============================
+   LEFT IMAGE
+================================= */
+
+.testimonial-image {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-image img {
+    width: 100%;
+    max-width: 600px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* ==============================
+   RIGHT CONTENT
+================================= */
+
+.testimonial-content {
+    width: 50%;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* SMALL TITLE */
+
+.testimonial-label {
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: #641cff;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* MAIN HEADING */
+
+.testimonial-content h2 {
+    margin: 0 0 28px;
+
+    color: #29446b;
+
+    font-size: 58px;
+
+    line-height: 1.05;
+
+    font-weight: 700;
+}
+
+.testimonial-content h2 span {
+    color: #641cff;
+}
+
+
+/* ==============================
+   INTRO TEXT
+================================= */
+
+.intro-text {
+    max-width: 650px;
+
+    margin: 0 0 55px;
+
+    color: #7185a0;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   STARS
+================================= */
+
+.stars {
+    margin-bottom: 25px;
+
+    color: #ffad4a;
+
+    font-size: 25px;
+
+    letter-spacing: 3px;
+}
+
+
+/* ==============================
+   TESTIMONIAL TITLE
+================================= */
+
+.testimonial-content h3 {
+    margin: 0 0 25px;
+
+    color: #405b7b;
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+
+/* ==============================
+   TESTIMONIAL PARAGRAPH
+================================= */
+
+.testimonial-text {
+    max-width: 700px;
+
+    margin: 0 0 35px;
+
+    color: #263f60;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   BOTTOM AREA
+================================= */
+
+.testimonial-bottom {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* ==============================
+   PERSON
+================================= */
+
+.person {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.person img {
+    width: 80px;
+    height: 80px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+.person h4 {
+    margin: 0 0 8px;
+
+    color: #405b7b;
+
+    font-size: 23px;
+
+    font-weight: 700;
+}
+
+
+.person p {
+    margin: 0;
+
+    color: #7185a0;
+
+    font-size: 17px;
+}
+
+
+/* ==============================
+   ARROWS
+================================= */
+
+.arrows {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.arrows button {
+    width: 60px;
+    height: 60px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #eef3f8;
+
+    color: #641cff;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.arrows button:hover {
+    background: #641cff;
+
+    color: white;
+}
+
+
+.divider {
+    width: 1px;
+    height: 35px;
+
+    background: #dce3eb;
+}
+
+
+/
+
+    .testimonials {
+        gap: 40px;
+
+        padding: 60px 40px;
+    }
+
+
 
 .between-section {
     width: 100%;
