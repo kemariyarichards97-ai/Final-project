@@ -66,13 +66,13 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #243E63;
+    color: #04090e;
     font-weight: 600;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #6415ff;
+    color: #f6f6f8;
 }
 
 .signup-btn {
@@ -83,8 +83,8 @@ body {
     padding: 10px 24px;
     height: 44px;
 
-    background: #6415ff;
-    color: white;
+    background: #4c12c1;
+    color: rgb(245, 243, 247);
     text-decoration: none;
     font-weight: 600;
 
@@ -93,7 +93,7 @@ body {
 }
 
 .signup-btn:hover {
-    background: #5011cc;
+    background: #4104bbfa;
 }
 
 
@@ -531,6 +531,34 @@ body {
     display: block;
     object-fit: contain;
 }
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-content p {
+    margin: 0 0 25px 0;
+}
+
+.learn-more-btn {
+    background-color: #6415ff;
+    color: rgb(255, 255, 255);
+    border: 2px solid #6415ff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: rgb(63, 31, 146);
+    color: #6415ff;
+}
+
 
 .section-tag {
     text-align: center;
@@ -1139,7 +1167,7 @@ h1 {
 }
 
 
-/
+
 
     .testimonials {
         gap: 40px;
