@@ -35,14 +35,28 @@
 
 <main>
 
-    <div>
-        <section>
-            <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
+ <div class="hamburger-menu">
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul class="hamburger-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#" class="signup-btn">Sign Up</a></li>
+    </ul>
+
 </div>
-        </section>
+</div>
+        </section
     </div>
 
 
@@ -121,6 +135,7 @@
                     src="assets-20260626T155133Z-3-001/assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
                     alt="Secure icon"
                 >
+
 
                 <h3>Secure</h3>
 
@@ -411,77 +426,102 @@
 
 </section>
 
-<section class="testimonials">
+```html
+<!-- ================= TESTIMONIALS ================= -->
 
-    <!-- LEFT SIDE -->
-    <div class="testimonial-image">
-        <img src="assets-20260626T155133Z-3-001/assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"
-             alt="People sharing love">
-    </div>
+<section class="testimonial-section" id="testimonials">
 
+    <div class="testimonial-container">
 
-    <!-- RIGHT SIDE -->
-    <div class="testimonial-content">
+        <!-- LEFT SIDE -->
+        <div class="testimonial-image">
 
-        <span class="testimonial-label">TESTIMONIALS</span>
+            <img 
+                src="assets-20260626T155133Z-3-001/assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"
+                alt="People sharing love"
+            >
 
-        <h2>
-            Our Clients <span>Love Us.</span>
-        </h2>
-
-        <p class="intro-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua enim
-            ad minim veniam.
-        </p>
-
-
-        <!-- STARS -->
-        <div class="stars">
-            ★ ★ ★ ★ ★
         </div>
 
 
-        <h3>Amazing User Experience</h3>
+        <!-- RIGHT SIDE -->
+        <div class="testimonial-content">
 
-        <p class="testimonial-text">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco.
-        </p>
+            <span class="testimonial-label">
+                TESTIMONIALS
+            </span>
+
+            <h2>
+                Our Clients <span>Love Us.</span>
+            </h2>
+
+            <p class="intro-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua enim ad minim veniam.
+            </p>
 
 
-        <!-- PERSON -->
-        <div class="testimonial-bottom">
+            <!-- STARS -->
+            <div class="stars">
+                ★ ★ ★ ★ ★
+            </div>
 
-    <div class="person">
 
-        <img src="assets-20260626T155133Z-3-001/assets/photo-1494790108377-be9c29b29330.avif"
-             alt="Client">
+            <h3>
+                Amazing User Experience
+            </h3>
 
-        <div>
-            <h4>Charlotte Hale</h4>
-            <p>Director, Delos Inc.</p>
-        </div>
+            <p class="testimonial-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco.
+            </p>
 
-    </div>
 
-    <div class="arrow-buttons">
+            <!-- PERSON + ARROWS -->
+            <div class="testimonial-bottom">
 
-        <button class="arrow-btn">
-            ←
-        </button>
+                <!-- PERSON -->
+                <div class="person">
 
-        <button class="arrow-btn">
-            →
-        </button>
+                    <img 
+                        src="assets-20260626T155133Z-3-001/assets/photo-1494790108377-be9c29b29330.avif"
+                        alt="Client"
+                    >
 
-    </div>
+                    <div>
 
-</div>
+                        <h4>
+                            Charlotte Hale
+                        </h4>
+
+                        <p>
+                            Director, Delos Inc.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ARROW BUTTONS -->
+                <div class="arrow-buttons">
+
+                    <button class="arrow-btn" type="button">
+                        ←
+                    </button>
+
+                    <button class="arrow-btn" type="button">
+                        →
+                    </button>
+
+                </div>
+
             </div>
 
         </div>
@@ -489,7 +529,356 @@
     </div>
 
 </section>
+```
 
+### CSS — copy and paste this into your CSS file
+
+```css
+/* ================= TESTIMONIALS ================= */
+
+.testimonial-section {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.testimonial-container {
+    width: 85%;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+/* ================= LEFT IMAGE ================= */
+
+.testimonial-image {
+    width: 45%;
+}
+
+.testimonial-image img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+}
+
+
+/* ================= RIGHT CONTENT ================= */
+
+.testimonial-content {
+    width: 55%;
+}
+
+.testimonial-label {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.testimonial-content h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.testimonial-content h2 span {
+    color: #6415ff;
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.stars {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.testimonial-content h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* ================= PERSON ================= */
+
+.testimonial-bottom {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.person img {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.person h4 {
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+
+.person p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* ================= ARROWS ================= */
+
+.arrow-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.arrow-btn {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #6415ff;
+    color: white;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .testimonial-section {
+        padding: 60px 0;
+    }
+
+    .testimonial-container {
+        width: 90%;
+        gap: 40px;
+    }
+
+    .testimonial-image {
+        width: 45%;
+    }
+
+    .testimonial-content {
+        width: 55%;
+    }
+
+    .testimonial-content h2 {
+        font-size: 34px;
+    }
+
+    .testimonial-bottom {
+        gap: 20px;
+    }
+
+    .person {
+        gap: 15px;
+    }
+
+    .person img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .person h4 {
+        font-size: 18px;
+    }
+
+    .person p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* ================= PHONE ================= */
+
+@media (max-width: 768px) {
+
+    .testimonial-section {
+        width: 100%;
+        padding: 50px 20px;
+    }
+
+    .testimonial-container {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+
+    /* IMAGE */
+
+    .testimonial-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .testimonial-image img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+
+    /* CONTENT */
+
+    .testimonial-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .testimonial-content h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .intro-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* PERSON */
+
+    .testimonial-bottom {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 25px;
+    }
+
+    .person {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        text-align: center;
+
+        gap: 10px;
+    }
+
+    .person img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .person h4 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .person p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+
+    /* ARROWS */
+
+    .arrow-buttons {
+        display: flex;
+
+        justify-content: center;
+
+        gap: 10px;
+
+        margin-left: 0;
+    }
+
+    .arrow-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+
+    .testimonial-section {
+        padding: 40px 15px;
+    }
+
+    .testimonial-content h2 {
+        font-size: 28px;
+    }
+
+    .intro-text {
+        font-size: 13px;
+    }
+
+    .testimonial-text {
+        font-size: 13px;
+    }
+
+    .person img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .person h4 {
+        font-size: 18px;
+    }
+
+    .person p {
+        font-size: 13px;
+    }
+
+    .arrow-btn {
+        width: 34px;
+        height: 34px;
+    }
+
+}
 
 
 <!-- PRICING SECTION -->
